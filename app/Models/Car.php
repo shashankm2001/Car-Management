@@ -9,7 +9,12 @@ class Car extends Model
 {
     //
     use HasFactory;
+     
+//  This is used to check the contents that i can fill in database
+
     protected $fillable = ['name','brand','color','year'];
+
+    
      
 }
 
