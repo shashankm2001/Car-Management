@@ -15,3 +15,4 @@ Route::patch(uri:'/updateData/{id}', action : [CarController :: class , 'update'
 Route::get(uri : '/editCar/{id}',    action : [CarController :: class, 'edit']); // edit or check the changes of updated 
 Route::delete(  '/delete/{id}', action : [CarController :: class, 'destroy']);// Delete a record
 Route::get('show/{id}',         action : [CarController :: class, 'show']);// Show  particular id 
+Route::get('createCar',              action : [CarController::class,'create']);

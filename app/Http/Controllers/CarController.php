@@ -10,6 +10,8 @@ class CarController extends Controller
     /**
      * Display a listing of the resource.
      */
+
+    // This uses get method 
     public function index()  // Get 
     {
         return  response()->json( Car::all());
@@ -21,6 +23,12 @@ class CarController extends Controller
     public function create()
     {
         //
+        return response()->json(
+        [
+                'message'=> 'Display the form for creating a new car',
+                'expected Fields' => 'name, year, brand ,color'
+        ],200);
+
     }
 
     /**
